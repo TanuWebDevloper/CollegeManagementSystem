@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+      
+<head>
+
+<meta charset="ISO-8859-1">
+<link th:href="@{/css/homepage.css}" rel="stylesheet" >
+</head>
+ 
+<body>
+
+
+<div id="background">
+<div id="lay">
+
+
+
+ <div id="nav" class="navbar">
+ 
+
+  <a th:href="@{'/'}">Home</a>
+  <a th:href="@{'/admission/'}">Admission</a>
+  <a th:href="@{'/contact/'}">Contact</a>
+  
+  
+   <div class="dropdown">
+    <button  class="dropbtn" >Login <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a th:href="@{'/student_login/'}">Student Login</a>
+      <a th:href="@{'/teacher_login/'}">Teacher Login</a>
+      <a th:href="@{'/management_staff_login/'}">Management Login</a>
+      <a href="@{'/list_courses'}">Course Details List</a>
+      <a href="@{'/list_department'}">Department Details List</a>
+      <a th:href="@{'/list_subject/'}">Subject Details</a>
+      
+      
+    </div>
+  </div> 
+ 
+ </div>
+ 
+ <h1>Hi... Welcome</h1>
+</div>
+</div>
+
+</body>
+</html>

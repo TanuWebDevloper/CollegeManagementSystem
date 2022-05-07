@@ -1,0 +1,83 @@
+@charset "ISO-8859-1";
+
+*{
+
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html , body{
+	
+     height: 100%;
+     width: 100%;
+}
+
+
+#back{
+	height:100%;
+	width:100%;
+	background-image:url("/addmission.jpeg");
+	background-position: center;
+    background-size: cover;
+    
+}
+
+
+
+#nav{
+	display:flex;
+	width:100%;
+	height:50px;
+	background-color:blue;
+	justify-content: space-around;
+    align-items: center;
+}
+#nav a{
+
+  float: left;
+  font-size: 19px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+#frm{
+	position:absolute;
+	top:20%;
+	left:50%;
+	height:40%;
+	width:30%;
+	background-color:white;
+	box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+	
+}
+	
+#frm>h3{
+  font-family: Calibri; 
+  font-size: 25px;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:SlateBlue;
+  text-align: center; 
+  text-decoration: underline
+}
+
+#frm>table{
+  font-family: Calibri; 
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align: normal; 
+  background-color: SlateBlue; 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+#frm>table.inner{
+  border: 0px
+}
+
+

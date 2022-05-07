@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Student details</title>
+<link th:href="@{/css/studentLogin.css}" rel="stylesheet" >
+</head>
+<body>
+<div id="bgg">
+<div id="nav">
+ <a th:href="@{'/'}">Home</a>
+ <a th:href="@{'/addmission'}">Addmission</a>
+ <a th:href="@{'/Contact'}">Contact</a>
+ </div>
+ 
+<div class="container mt-5" align="center">
+<h2 align="center">List of student record</h2></br></br>
+  <form th:action="@{/Student_home}" method="get" >
+  
+  <input type="text" name="keyword" th:value="${keyword}"  placeholder="Find by Id, Name , Email & course" size="50" >
+  <button type="submit" class="btn btn-info" >Search</button>
+  </form></br></br>
+  <table class="table table-bordered table-sm mt-2" border="1" cellpadding="10" align="center">
+    <thead>
+      <tr>
+        <th>Student id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="l : ${studentlist}" th:field="${l}">
+        <td th:text="${l.id}"></td>
+        <td th:text="${l.name}"></td>
+        <td th:text="${l.email}"></td>
+        <td th:text="${l.course}"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</body>
+</html>
